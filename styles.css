@@ -1,0 +1,39 @@
+:root {
+  --cardFromRight: #abcea3;
+  --cardFromLeft: #120d31;
+  --rotate: #8de969;
+}
+.flexcolcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+  main {
+    height: 100vh;
+    gap: 50px;
+  }
+ .card {
+    max-width: 500px;
+    min-width: 300px;
+    border-style: solidbo;
+    border-width: 2px;
+    border-color: lightgrey;
+    padding: 10px;
+    box-shadow: 2px 2px 7px #d3d3d3;
+  }
+  .slideInLeftcard{
+    background-color: var(--cardFromLeft);
+    color:whitesmoke;
+    transform: translateX(-300);
+    animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+  }
+}
